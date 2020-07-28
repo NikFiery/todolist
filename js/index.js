@@ -181,4 +181,73 @@
 
 // alert(`Expression result: ${calc.oneValue} + ${calc.twoValue} = ${calc.sum()}`);
 // alert(`Expression result: ${calc.oneValue} * ${calc.twoValue} = ${calc.mul()}`);
-// alert(`Expression result: ${calc.oneValue} √ ${calc.twoValue} = ${calc.radical()}`);///////доделю условия ввода чисел и проверку на числа.
+// alert(`Expression result: ${calc.oneValue} √ ${calc.twoValue} = ${calc.radical()}`);///////доделю условия ввода чисел и проверку на числа. 
+
+///////====================STAIRS====================///////
+
+// let stairs = {
+//     steep: 0,
+//     up(){
+//         this.steep++;
+//         return this;
+//     },
+//     down(){
+//         this.steep--;
+//         return this;
+//     },
+//     result: function(){
+//         alert(this.steep);
+//         return this;
+//     },
+// }
+
+// stairs
+// .up()  //1
+// .up()  //2
+// .up()  //3
+// .up()  //4
+// .down()  //3
+// .up()  //4
+// .result();  //4
+///////////////////////////////===NEW===////////////////
+
+// function User(name) {
+//     this.name = name;
+//     this.welcom = () => {
+//         alert(`Привет! Меня зовут: ${this.name}`);
+//     }
+// }
+
+// let valera = new User('Valera');
+// valera.welcom();
+// ///////////////////////////////////////////////////////
+// let num = +prompt("Enter a number", '');
+// alert(isFinite(num))
+/////////////////////////////////////////////////////////
+///////////////////////////Сравнение/////////////////////
+// let vika = 228;
+// let nik = 228
+
+// alert(Object.is(vika, nik));
+//////////////////////////////Числа///////////////////////
+// alert(parseInt('20.5$fsdfsd'));//result = 20= ////
+// alert(parseFloat('20.5$dsfsd'));//result = 20.5//
+// let numberDol = 25.500000
+// alert(numberDol.toFixed(2))//result = 25.50
+
+// /////
+// lert(Math.max(3, 5, -10, 0, 1)); // 5
+// alert(Math.min(1, 2)); // 1
+// Math.pow(2, 5)//2 ** 5 // result = 35
+//////////////////////////////////////////////////////////
+/////////////RANDOM/////////////////////////random////////
+
+function random(min, max) {
+    // получить случайное число от (min-0.5) до (max+0.5)
+    let num = min - 0.5 + Math.random() * (max - min + 1);
+    return Math.round(num);
+}
+
+alert(random(1, 99));
+alert(random(1, 99));
+alert(random(1, 99));
